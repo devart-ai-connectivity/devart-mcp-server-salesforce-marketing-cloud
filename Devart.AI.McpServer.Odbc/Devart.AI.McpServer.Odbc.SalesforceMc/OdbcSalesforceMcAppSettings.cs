@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // <copyright file="OdbcSalesforceMcAppSettings.cs" company="Devart">
 //
 // Copyright (c) Devart. ALL RIGHTS RESERVED
@@ -15,5 +15,14 @@ namespace Devart.AI.McpServer.Odbc.SalesforceMc
     public override string SourceName => "Salesforce Marketing Cloud";
 
     public override bool OnPremise => false;
+
+    public override string[] Routines => [];
+
+    public override string Driver => Properties.ProductInfo.Driver;
+
+    public override string DriverUrl => Properties.ProductInfo.DriverUrl;
+
+
+    public override string DriverDll => Properties.ProductInfo.DriverDll;
   }
 }

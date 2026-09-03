@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // <copyright file="OdbcSalesforceMcForeignKeysTool.cs" company="Devart">
 //
 // Copyright (c) Devart. ALL RIGHTS RESERVED
@@ -11,20 +11,20 @@ using System.Data;
 using System.Data.Common;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
 using Devart.AI.McpServer.Extensions;
-using Devart.AI.McpServer.Tools;
 using Devart.AI.McpServer.Interfaces;
+using Devart.AI.McpServer.Tools;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Devart.AI.McpServer.Odbc.SalesforceMc.Tools
 {
   internal sealed class OdbcSalesforceMcForeignKeysTool(McpConfiguration serverConfiguration) : ForeignKeysTool(serverConfiguration)
   {
     protected override async Task<DataTable> GetMetadataTable(
-      DbConnection connection, 
-      string schema, 
-      string tableName, 
-      IServiceProvider services, 
+      DbConnection connection,
+      string schema,
+      string tableName,
+      IServiceProvider services,
       CancellationToken cancellationToken)
     {
       const string sql =

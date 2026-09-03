@@ -1,5 +1,9 @@
 [![Devart MCP Server for Salesforce Marketing Cloud](https://github.com/devart-ai-connectivity/.github/blob/main/assets/cover-banner-mcp-server-for-salesforce-marketing-cloud.webp?raw=true)](https://www.devart.com/mcp/)
 
+### Version 1.1.0
+
+**[What's new](https://github.com/devart-ai-connectivity/devart-mcp-server-salesforce-marketing-cloud/releases/latest)** · [Changelog](CHANGELOG.md)
+
 # Devart MCP Server for Salesforce Marketing Cloud
 
 Devart MCP Server for Salesforce Marketing Cloud enables AI clients to interact with your data through a secure server running in your environment. It turns a regular AI chat into a practical way to work with real-world business data — and it is faster than conventional export or manual querying.
@@ -102,7 +106,7 @@ Add the following configuration to the `mcpserver.json` file:
   "Connections": [
     {
       "Name": "my_salesforcemc",
-      "ConnectionString": "Server=localhost;User Id=salesforcemc;Password=your_password;Database=your_database;",
+      "ConnectionString": "Authentication Type=UserNamePassword;Url=https://your-exacttarget-url;User Id=your_user;Password=your_password;License Key=your_license_key;",
       "ProtocolType": "stdio"
     }
   ]

@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // <copyright file="AdoNetSalesforceMcAppSettings.cs" company="Devart">
 //
 // Copyright (c) Devart. ALL RIGHTS RESERVED
@@ -14,6 +14,8 @@ namespace Devart.AI.McpServer.AdoNet.SalesforceMc
 
     public override string SourceName => "Salesforce Marketing Cloud";
 
-    public override bool OnPremise => true;
+    public override bool OnPremise => false;
+
+    public override string[] Routines => [];
   }
 }

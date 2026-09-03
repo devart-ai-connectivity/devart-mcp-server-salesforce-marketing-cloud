@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------
 // <copyright file="OdbcSalesforceMcTools.cs" company="Devart">
 //
 // Copyright (c) Devart. ALL RIGHTS RESERVED
@@ -7,8 +7,8 @@
 // --------------------------------------------------------------------------
 
 using System.Collections.Generic;
-using ModelContextProtocol.Server;
 using Devart.AI.McpServer.Odbc.SalesforceMc.Tools;
+using ModelContextProtocol.Server;
 
 namespace Devart.AI.McpServer.Odbc.SalesforceMc
 {
